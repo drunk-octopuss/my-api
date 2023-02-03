@@ -15,7 +15,7 @@ app.get('/', (req, res) => res.send('Hello, its homepage'))
 
 //Connect to my own DB
 mongoose.connect(
-    `mmongodb+srv://myassuser:Wholetthedogsout@cluster0.p4u5tqu.mongodb.net/Cluster0?retryWrites=true&w=majority`,
+    `mongodb+srv://myassuser:Wholetthedogsout@cluster0.p4u5tqu.mongodb.net/cluster0?retryWrites=true&w=majority`,
     { useNewUrlParser: true, useUnifiedTopology: true},
     () => {
         console.log('DB connected bitch')
